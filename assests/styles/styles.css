@@ -176,6 +176,79 @@ nav ul li a:hover {
 
 /*=============Responsive==========================*/
 /* Media Query for Mobile Large (425px and below) */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    nav {
+        flex-direction: column; /* Stack logo and links */
+        align-items: center; /* Center everything */
+    }
+
+    .logo h1 {
+        font-size: 24px; /* Adjust logo size */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 15px; /* Add spacing between links */
+        margin-top: 20px; /* Add margin above links */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .contact-btn {
+        padding: 10px 20px; /* Adjust button size */
+        font-size: 16px;
+    }
+
+    /* Home Section */
+    .home {
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center; /* Center-align text */
+        padding: 50px 5%; /* Adjust padding */
+    }
+
+    .intro h1 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    .intro h2 {
+        font-size: 1.5rem; /* Adjust subheading size */
+        margin-top: 10px;
+    }
+
+    .intro p {
+        font-size: 1rem; /* Adjust paragraph size */
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .btn {
+        padding: 10px 15px; /* Adjust button padding */
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        width: 70%; /* Reduce image size for tablets */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 30px; /* Add space between text and image */
+    }
+
+    .social-icons-header {
+        justify-content: center; /* Center social icons */
+        margin-top: 20px;
+    }
+
+    .social-icons-header img {
+        width: 30px; /* Reduce icon size */
+    }
+}
 @media (max-width: 425px) {
     /* Navbar adjustments */
     nav {
@@ -328,6 +401,50 @@ nav ul li a:hover {
     color: #00E0FF; /* Highlighted text */
 }
 
+@media screen and (max-width: 768px) {
+    /* About Me Section */
+    .about-me {
+        padding: 50px 5%; /* Adjust padding */
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center-align the content */
+    }
+
+    .container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center content */
+    }
+
+    .about-image {
+        margin-bottom: 30px; /* Add space between image and text */
+    }
+
+    .about-image img {
+        max-width: 300px; /* Reduce image size for tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .about-text {
+        margin: 0; /* Remove left margin */
+        text-align: center; /* Center-align the text */
+    }
+
+    .about-text h2 {
+        font-size: 32px; /* Reduce heading size */
+        margin-bottom: 15px; /* Adjust spacing */
+    }
+
+    .about-text p {
+        font-size: 16px; /* Reduce paragraph size */
+        line-height: 1.6; /* Adjust line height */
+        margin-bottom: 20px;
+    }
+
+    .personal-info p {
+        font-size: 14px; /* Adjust personal info text size */
+        margin: 8px 0;
+    }
+}
+
 /* Media Query for Mobile Large (425px and below) */
 @media (max-width: 425px) {
     /* About Me Section */
@@ -387,6 +504,7 @@ nav ul li a:hover {
     background-color: black; /* Dark background */
     color: #fff;
     text-align: center;
+
 }
 
 .education h2 {
@@ -509,6 +627,40 @@ nav ul li a:hover {
 
 .experience-details strong {
     color: #00E0FF; /* Neon cyan color */
+}
+@media (max-width: 768px) {
+    /* Adjust Education and Experience Sections */
+    .education-container, .experience-container {
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center; /* Center the items */
+        gap: 20px;
+    }
+
+    /* Adjust width of the items */
+    .education-item, .experience-item {
+        width: 80%; /* Make items take up more space */
+        margin: 0 auto; /* Center the items */
+        flex-direction: column; /* Stack image and text vertically */
+        text-align: center;
+    }
+
+    .education-item img, .experience-item img {
+        width: 60px; /* Resize images for better fit */
+        height: 60px;
+        margin-bottom: 10px; /* Add space between image and text */
+    }
+
+    .education-details, .experience-details {
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .education-details h3, .experience-details h3 {
+        font-size: 16px; /* Adjust heading size for smaller screens */
+    }
+
+    .education-details p, .experience-details p {
+        font-size: 12px; /* Adjust paragraph text size */
+    }
 }
 
 /* Media Query for Mobile Large (425px and below) */
@@ -678,7 +830,44 @@ nav ul li a:hover {
     transform: scale(1.2);
     filter: drop-shadow(0 0 8px #00E0FF); /* Glow effect on hover */
 }
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column; /* Stack skill list and icons vertically */
+        align-items: flex-start;
+        gap: 30px;
+    }
 
+    .skill-list {
+        max-width: 100%; /* Full width for the skill list */
+    }
+
+    .skill-item p {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .skill-bar {
+        height: 6px; /* Reduce bar height */
+    }
+
+    .skill-level {
+        height: 6px; /* Reduce skill level height */
+    }
+
+    .skill-icons {
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .skill-icons img {
+        width: 80px; /* Adjust icon size */
+        height: 80px;
+    }
+
+    .skill-icons img.java-logo {
+        width: 60px; /* Adjust Java logo size */
+        height: 90px;
+    }
+}
 @media (max-width: 425px) {
     .skills-section {
         padding: 20px 5%;
@@ -806,7 +995,61 @@ nav ul li a:hover {
     color: #000000;
 }
 
+@media (max-width: 768px) {
+    .projects-title-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
 
+    .section-title-works {
+        font-size: 28px;
+        margin-left: 0;
+    }
+
+    .projects-title {
+        font-size: 1.2rem;
+    }
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns */
+        gap: 20px;
+    }
+
+    .project-card {
+        flex-direction: column; /* Stack items vertically */
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .project-image img {
+        width: 150px; /* Adjust image size */
+        height: auto;
+    }
+
+    .project-name {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 0.85rem;
+    }
+
+    .project-details p {
+        font-size: 0.75rem;
+    }
+
+    .project-links {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .project-links a {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+}
 @media (max-width: 425px) {
     .projects-section {
         padding: 20px;
@@ -999,7 +1242,15 @@ nav ul li a:hover {
     background-color: #00ffff;
     color: #000000;
 }
-
+@media screen and (max-width: 768px) {
+    .assignments-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .assignment-card {
+        width: 100%;
+    }
+}
 @media (max-width: 425px) {
     .assignment-card, .case-card {
         width: 100%;
@@ -1077,6 +1328,46 @@ nav ul li a:hover {
     font-size: 0.9rem;
     color: seagreen;
 }
+@media screen and (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr; /* Stack the cards on smaller screens */
+    }
+    .service-icon img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+}
+@media (max-width: 425px) {
+    .services-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .service-card {
+        padding: 15px; /* Reduce padding for smaller screens */
+        text-align: center; /* Center align text for better readability */
+    }
+
+    .service-icon img {
+        width: 100%; /* Make icons responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px;
+    }
+
+    .service-title {
+        font-size: 1rem; /* Adjust font size */
+        color: #00FFFF; /* Keep neon cyan for titles */
+    }
+
+    .service-description {
+        font-size: 0.8rem; /* Slightly smaller description text */
+    }
+
+    .offer-title {
+        font-size: 1.2rem; /* Adjust subheading font size */
+        margin-bottom: 30px; /* Reduce margin for better spacing */
+    }
+}
 
 /* Gallery Section Styling */
 .gallery-section {
@@ -1125,7 +1416,36 @@ nav ul li a:hover {
 .gallery-item:hover img {
     transform: scale(1.1); /* Zoom effect on hover */
 }
+@media screen and (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+@media (max-width: 425px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        gap: 10px; /* Reduce gap between items */
+    }
 
+    .gallery-item {
+        border: 1px solid #00FFFF; /* Adjust border thickness */
+        border-radius: 8px; /* Slightly smaller border radius */
+    }
+
+    .gallery-item img {
+        width: 100%; /* Ensure images take full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .gallery-title {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Reduce margin for better spacing */
+    }
+
+    .section-title {
+        font-size: 1.8rem; /* Adjust the main title font size */
+    }
+}
 /* Contact Section Styling */
 .contact-section {
     padding: 50px 0;
@@ -1223,7 +1543,62 @@ textarea {
     width: 45px;
     height: auto;
 }
+@media screen and (max-width: 768px) {
+    .contact-info {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 425px) {
+    .contact-container {
+        flex-direction: column; /* Stack form and info vertically */
+        align-items: center; /* Center align content */
+        gap: 20px; /* Adjust gap between form and info */
+    }
 
+    .contact-form, .contact-info {
+        width: 100%; /* Take full width */
+        max-width: 100%; /* Remove max-width constraint */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-form h4 {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack inputs vertically */
+        gap: 10px; /* Adjust gap between input fields */
+    }
+
+    .form-group input, .form-group select, textarea {
+        width: 100%; /* Ensure full width for form fields */
+        padding: 8px; /* Adjust padding */
+    }
+
+    textarea {
+        height: 120px; /* Reduce height for smaller screens */
+    }
+
+    .submit-btn {
+        width: 100%; /* Full width for the button */
+        padding: 12px; /* Slightly larger padding */
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    .contact-info {
+        text-align: center; /* Center align contact info */
+    }
+
+    .contact-item {
+        flex-direction: column; /* Stack icon and text vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .contact-icon img {
+        width: 40px; /* Adjust icon size */
+    }
+}
 /* Footer Styling */
 .footer {
     background-color: #1C1E33; /* Dark Blue Background */
@@ -1321,6 +1696,86 @@ textarea {
 
 .footer-bottom p a:hover {
     color: #fff;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons-footer {
+        justify-content: center;
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        /*flex-direction: column; !* Stack footer items vertically *!
+        align-items: center; !* Center align content *!
+        text-align: center; !* Align text in the center *!
+        gap: 20px; !* Add space between items *!
+*/
+        display: flex;
+        justify-content: center; /* Center the logo text */
+        align-items: center;
+        gap: 5px; /* Add spacing between elements */
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .footer-item {
+        flex: unset; /* Remove flex to allow full width */
+        min-width: unset; /* Remove minimum width */
+        margin-bottom: 20px; /* Maintain spacing between items */
+        width: 100%; /* Take full width */
+        padding: 0 10px; /* Add padding for better readability */
+    }
+
+    .footer-item h2, .footer-item h3 {
+        font-size: 1rem; /* Adjust title font size */
+    }
+
+    .footer-item ul li {
+        margin: 8px 0; /* Add spacing between list items */
+    }
+
+    .footer-item ul li a {
+        font-size: 0.9rem; /* Adjust font size for links */
+    }
+
+    .social-icons-footer {
+        flex-wrap: wrap; /* Allow icons to wrap */
+        justify-content: center; /* Center-align social icons */
+        margin: 20px 0; /* Add margin above and below */
+    }
+
+    .social-icons-footer img {
+        width: 30px; /* Reduce size of social icons */
+    }
+
+    .footer-bottom {
+        padding: 10px 20px; /* Add padding for better layout */
+        font-size: 0.8rem; /* Adjust font size */
+    }
+
+   /* .footer-bottom .highlight-h{
+        font-size: 20px; !* Adjust logo text size *!
+    }
+    .footer-bottom .logo-text{
+        font-size: 20px;
+    }*/
+
+    .footer-bottom .highlight-h {
+        font-size: 1.5rem; /* Adjusted size for visibility */
+        font-weight: bold;
+        color: #00E0FF; /* Neon cyan */
+    }
+
+    .footer-bottom .logo-text {
+        font-size: 1.5rem; /* Match size with highlight */
+        font-weight: bold;
+        color: #ffffff; /* White for contrast */
+        display: inline;
+    }
 }
 
 
